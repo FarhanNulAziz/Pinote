@@ -1,0 +1,287 @@
+.card {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  border: 1px solid #e4e4e7;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(24, 24, 27, 0.03);
+  break-inside: avoid;
+  overflow: hidden;
+}
+
+.card:focus-within {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.linkCard {
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.linkCard:hover {
+  border-color: #c7d2fe;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.08);
+}
+
+.linkBody {
+  display: flex;
+  min-height: 132px;
+  flex-direction: column;
+  padding: 14px;
+}
+
+.linkTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.domain {
+  overflow: hidden;
+  color: #71717a;
+  font-size: 11px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.linkTitle {
+  margin-top: 12px;
+  color: #18181b;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.imageCard {
+  background: #ffffff;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  background: #f4f4f5;
+  object-fit: cover;
+}
+
+.imageFallback {
+  display: flex;
+  min-height: 140px;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f5;
+  color: #a1a1aa;
+  font-size: 12px;
+}
+
+.imageBody {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 14px 14px;
+}
+
+.imageTitle {
+  color: #18181b;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 14px;
+  color: #a1a1aa;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.textCard {
+  background: #fafafa;
+}
+
+.textBody {
+  display: block;
+  padding: 14px;
+}
+
+.imageLink {
+  display: block;
+}
+
+.quoteMark {
+  width: 22px;
+  height: 22px;
+  color: #a5b4fc;
+}
+
+.quoteMark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.quoteText {
+  display: -webkit-box;
+  margin-top: 8px;
+  overflow: hidden;
+  color: #3f3f46;
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.textTitle {
+  margin-top: 12px;
+  overflow: hidden;
+  color: #18181b;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 1px;
+  padding: 2px;
+  border: 1px solid rgba(228, 228, 231, 0.9);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 4px rgba(24, 24, 27, 0.06);
+  backdrop-filter: blur(6px);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+}
+
+.imageCard .actions {
+  top: 10px;
+  bottom: auto;
+}
+
+.action {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #52525b;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.action:hover {
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.action:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.action svg {
+  width: 16px;
+  height: 16px;
+}
+
+.actionFavorite,
+.actionFavorite:hover {
+  color: #4f46e5;
+}
+
+.actionStatus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.lockBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(228, 228, 231, 0.9);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #4f46e5;
+  box-shadow: 0 1px 4px rgba(24, 24, 27, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.lockBadge svg {
+  width: 13px;
+  height: 13px;
+}
+
+.imageCard .lockBadge {
+  right: auto;
+  left: 10px;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tagChip {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 10px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .actions {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(4px);
+  }
+
+  .card:hover .actions,
+  .card:focus-within .actions {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+}

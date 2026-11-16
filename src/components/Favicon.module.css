@@ -1,0 +1,20 @@
+.image {
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.fallback {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.fallback svg {
+  width: 60%;
+  height: 60%;
+}

@@ -1,0 +1,67 @@
+.page {
+  flex: 1;
+  min-height: 100dvh;
+  padding: 20px 16px 108px;
+  background: #f8f8f7;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: #4f46e5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 6px;
+  color: #18181b;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  margin-top: 6px;
+  color: #71717a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.card {
+  margin-top: 18px;
+  padding: 28px 20px;
+  border: 1px dashed #d4d4d8;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #71717a;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .page {
+    padding: 28px 24px 112px;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    padding: 40px 32px 56px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}

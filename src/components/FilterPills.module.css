@@ -1,0 +1,45 @@
+.pills {
+  display: flex;
+  gap: 8px;
+  margin: 0 -16px;
+  padding: 0 16px 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.pills::-webkit-scrollbar {
+  display: none;
+}
+
+.pill {
+  display: inline-flex;
+  height: 40px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: #efeff1;
+  color: #52525b;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.pill:hover {
+  background: #e4e4e7;
+}
+
+.active,
+.active:hover {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.icon {
+  width: 13px;
+  height: 13px;
+}

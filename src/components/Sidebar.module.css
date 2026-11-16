@@ -1,0 +1,163 @@
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 60;
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 16px;
+    border-right: 1px solid #e4e4e7;
+    background: #ffffff;
+    overflow-y: auto;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 4px 8px 22px;
+}
+
+.logo {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.brandText {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brandName {
+  color: #18181b;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.brandHint {
+  color: #a1a1aa;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item,
+.logout {
+  display: flex;
+  width: 100%;
+  height: 46px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: #52525b;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.item:hover,
+.logout:hover {
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.active,
+.active:hover {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.icon {
+  display: flex;
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.add {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 14px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 650;
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.2);
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.add:hover {
+  background: #4338ca;
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.26);
+}
+
+.addActive {
+  background: #4338ca;
+}
+
+.addIcon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.addIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logoutForm {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f1;
+}
